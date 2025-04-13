@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Knowledge Check</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+        <!-- Form -->
+        <div class="container mt-5 pt-5">
+            <h2 class="text-center text-primary">Registration Form</h2>
+            <form class="border p-4 shadow-sm bg-light">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control mb-3" placeholder="First Name">
+                    </div>    
+                    <div class="col-6">
+                        <input type="text" class="form-control mb-3" placeholder="Last Name">
+                    </div>
+                </div>
+                <input type="email" class="form-control is-invalid" placeholder="Email">
+                <div class="invalid-feedback">
+                    Email is required.
+                </div>
+                <input type="password" class="form-control is-invalid" placeholder="Password">
+                <div class="invalid-feedback">
+                    Password is required.
+                </div>
+                <p>Do you agree to the terms of service?</p>
+                <input type="checkbox" class="form-check-input mb-3" id="check1" name="Yes" value="something">
+                <label class="form-check-label" for="check1">Yes</label>
+                <input type="checkbox" class="form-check-input mb-3" id="check1" name="No" value="something">
+                <label class="form-check-label" for="check2">No</label>
+                <button class="btn btn-success w-100">Submit</button>
+            </form>
+        </div>
+
+        <!-- Table -->
+        <div class="container mt-5">
+            <h2 class="text-center text-primary">User Data</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover border">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Jane Doe</td>
+                            <td>jane.doe@example.com</td>
+                            <td>Admin</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John Smith</td>
+                            <td>john.smith@example.com</td>
+                            <td>User</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Oscar Meyer</td>
+                            <td>oscar.meyer@example.com</td>
+                            <td>User</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Spongebob Squarepants</td>
+                            <td>sponge.bob@example.com</td>
+                            <td>User</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>   
+        </div>
+
+        <!-- Image and Button Utilities -->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="img-fluid">
+                    <div class="card">
+                        <img src="images/cheeseburger.jpg" class="card-img-top mb-3" alt="Cheeseburger Image">
+                        <img src="images/cheeseburger.jpg" class="rounded-circle" alt="Cheeseburger Image">
+
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary d-md-block mb-3">Learn More</a>
+                            <a href="#" class="btn btn-primary d-none d-md-block">Questions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Nav Bar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    
+</body>
+</html>
